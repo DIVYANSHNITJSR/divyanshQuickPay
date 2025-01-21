@@ -14,7 +14,7 @@ export default function Users() {
     () => async () => {
       const data = await axios({
         method: "GET",
-        url: "http://localhost:3000/api/v1/user/bulk?filter=" + filters,
+        url: "https://divyanshquickpay-1.onrender.com/api/v1/user/bulk?filter=" + filters,
         headers:{
           Authorization:"Bearer " + localStorage.getItem("token")
         }

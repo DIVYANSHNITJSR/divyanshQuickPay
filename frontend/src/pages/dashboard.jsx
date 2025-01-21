@@ -17,7 +17,7 @@ export default function Dashboard() {
       }
       const data = await axios({
         method: "GET",
-        url: "http://localhost:3000/api/v1/account/balance",
+        url: "https://divyanshquickpay-1.onrender.com/api/v1/account/balance",
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },

@@ -12,7 +12,7 @@ export default function Signin() {
     useEffect(() => async() => {
         const data = await axios({
           method: "GET",
-          url: "http://localhost:3000/api/v1/check",
+          url: "https://divyanshquickpay-1.onrender.com/api/v1/check",
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token"),
           },
@@ -44,7 +44,7 @@ export default function Signin() {
     async function Sign_in() {
         const data = await axios({
           method: "POST",
-            url: "http://localhost:3000/api/v1/user/signin",
+            url: "https://divyanshquickpay-1.onrender.com/api/v1/user/signin",
             data: {
                 username,
                 password

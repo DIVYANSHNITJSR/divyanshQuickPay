@@ -35,7 +35,7 @@ export default function SendMoney() {
           if (amount > 0) {
             const data = await axios({
               method: "POST",
-              url: "http://localhost:3000/api/v1/account/transfer",
+              url: "https://divyanshquickpay-1.onrender.com/api/v1/account/transfer",
               data: {
                 amount: amount,
                 to: id

@@ -21,7 +21,7 @@ export default function SignUp() {
     () => async () => {
       const data = await axios({
         method: "GET",
-        url: "http://localhost:3000/api/v1/check",
+        url: "https://divyanshquickpay-1.onrender.com/api/v1/check",
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
@@ -37,7 +37,7 @@ export default function SignUp() {
   async function Sign_up() {
    const data= await axios({
       method: "post",
-      url: "http://localhost:3000/api/v1/user/signup",
+      url: "https://divyanshquickpay-1.onrender.com/api/v1/user/signup",
       data: {
         firstName,
         lastName,
